@@ -8,11 +8,11 @@ Feature: Review calendar
     When append the following params for icos_data
         | Param_name        | Param_value   |
         | indexSymbol       | <indexSymbol> |
-        | calendarYearMonth | 2024-07       |
+        | calendarYearMonth | 2024-06       |
 
     And make the api request
     And save the data of icos api
-    When Fetch the icos data from sql at <indexSymbol> and 2024-07
+    When Fetch the icos data from sql at <indexSymbol> and 2024-06
     Then validate the data
 
     Examples:
